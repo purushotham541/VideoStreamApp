@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.SigninActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tbr"
+        app:titleTextColor="@color/title_white"
+        android:background="@color/colorPrimary"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:id="@+id/img_logo"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/mobitics_logo"
+        android:layout_below="@id/tbr"
+        android:layout_marginTop="100dp"
+        />
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="match_parent"
+        android:layout_margin="30dp"
+        android:padding="5dp"
+        android:id="@+id/sign_in"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_logo"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pgbr"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/sign_in"/>
+
+
+</RelativeLayout>
